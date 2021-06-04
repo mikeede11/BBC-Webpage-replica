@@ -1,0 +1,608 @@
+<html>
+	<head>
+		<title>Home - BBC News</title>
+		<style type="text/css">
+			body{
+			margin: 0px;
+			font-family: Helvetica, Arial, sans-serif;
+			}
+			.topLine{
+				background-color: black;
+				position:relative;
+				height: 40px;
+				margin-right: 2px;
+				float: left;
+				
+			}
+			.headerText{
+				text-align: center;
+				position: relative;
+				top: -5px;
+				color: white;
+			}
+			
+			
+			#bbcBlock{
+				width: 300px;
+			}
+			#bbcLogo{
+				position: relative;
+				top: 5px;
+				left:200px;
+				height: 30px;
+				width: 90px;
+				
+			}
+			
+			div#signInBlock{
+			
+				background-color: black;
+				width: 200px;
+				height: 35px;
+				border-bottom: 5px black solid;
+				
+			}
+			div#signInBlock:hover{
+				border-bottom: 5px #008B8B solid;
+			}
+			div#signInBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				
+			}
+			
+			#signIn{
+				background-color: white;
+				border-radius: 50%;
+				height:25px;
+				width: 25px;
+				position: relative;
+				float:left;
+				left: 15px;
+				top: 6px;
+			}
+			#signInText{
+				color: white;
+				position: relative;
+				float:left;
+				top: -5px;
+				left: 20px;
+				font-size: 90%;
+				text-decoration: none;
+			}
+			div#homeBlock{
+				width: 80px
+			}
+			
+			div#homeBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#newsBlock{
+				width: 80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+				text-decoration:none;
+			}
+			div#newsBlock:hover{
+				border-bottom: 5px #A52A2A solid;
+			}
+			div#newsBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#sportsBlock{
+				width:80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+			}
+			div#sportsBlock:hover{
+				border-bottom: 5px #ffd900 solid;
+			}
+			div#sportsBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#reelBlock{
+				width: 80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+			}
+			div#reelBlock:hover{
+				border-bottom: 5px #1E90FF solid;
+			}
+			div#reelBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#worklifeBlock{
+				width: 80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+			}
+			div#worklifeBlock:hover{
+				border-bottom: 5px #1E90FF solid;
+			}
+			div#worklifeBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#travelBlock{
+				width: 80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+			}
+			div#travelBlock:hover{
+				border-bottom: 5px #98FB98 solid;
+			}
+			div#travelBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#futureBlock{
+				width: 80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+			}
+			div#futureBlock:hover{
+				border-bottom: 5px #4682B4 solid;
+			}
+			div#futureBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#cultureBlock{
+				width: 80px;
+				height: 35px;
+				border-bottom: 5px black solid;
+			}
+			div#cultureBlock:hover{
+				border-bottom: 5px #663399 solid;
+			}
+			div#cultureBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			div#moreBlock{
+				width: 130px;
+				height: 35px;
+				text-align: center;
+				border-bottom: 5px black solid;
+			}
+			div#moreBlock:hover{
+				border-bottom: 5px white solid;
+			}
+			div#moreBlock a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#dropdown {
+				position:relative;
+				top: 10px;
+				background-color: black;
+				color: white;
+				display: inline-block;
+				border: none;
+			}
+			#searchBlock{
+				width:392px;
+				float: right;
+				text-align: left;
+				
+				border: none;
+			}
+			#leftColumn{
+				height: 1000px;
+				width: 200px;
+				float:left;
+				background-color: white;
+			}
+			#rightColumn{
+				height: 1000px;
+				width: 200px;
+				float:right;
+				background-color: white;
+			}
+			
+			div#content{
+				height:1000px;
+				width:1286px;
+				background-color: white;
+				float:left;
+			}
+			#content img{
+				filter: brightness(50%);
+			}
+			.news:hover{
+				filter: brightness(120%);
+			}
+			#mainNews{
+				clear: both;
+				float: left;
+				margin: 10px;
+				position: relative;
+				background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/13C26/production/_118743908_gettyimages-1233173200.jpg');
+				height: 360px;
+				width: 650px;
+				background-size: 650px, 400px;
+			}
+			div#mainNews a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#headline{
+				position: absolute;
+				color: white;
+				filter: brightness(100%);
+				bottom: 20px;
+				left: 16px;
+				text-align: left;
+				font-size:200%;
+			}
+			#news2{
+				float:left;
+				position: relative;
+				top: 5px;
+				margin: 5px 0px 5px 5px;
+				background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/FA56/production/_118768046_mediaitem118768045.jpg');
+				height: 170px;
+				width: 300px;
+				background-size: 300px, 170px;
+			}
+			div#news2 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#headline2{
+				position: absolute;
+				color: white;
+				filter: brightness(100%);
+				bottom: 10px;
+				left: 16px;
+				text-align: left;
+				font-size:130%;
+			}
+			#news3{
+				float:left;
+				position: relative;
+				top: 5px;
+				margin: 5px 0px 5px 5px;
+				background-image: url('https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1229934_1296x729.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg');
+				height: 170px;
+				width: 300px;
+				background-size: 300px, 170px;
+			}
+			/*div#news3 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}*/
+			#headline3{
+				position: absolute;
+				color: white;
+				filter: brightness(100%);
+				bottom: 10px;
+				left: 16px;
+				text-align: left;
+				font-size:130%;
+			}
+			#news4{
+				float:left;
+				position: relative;
+				top: 5px;
+				margin: 5px 0px 5px 5px;
+				background-image: url('https://ychef.files.bbci.co.uk/1600x900/p09jwt75.webp');
+				height: 170px;
+				width: 300px;
+				background-size: 300px, 170px;
+			}
+			div#news4 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#headline4{
+				position: absolute;
+				color: white;
+				filter: brightness(100%);
+				bottom: 10px;
+				left: 16px;
+				text-align: left;
+				font-size:130%;
+			}
+			#news5{
+				float:left;
+				position: relative;
+				top: 5px;
+				margin: 5px 0px 5px 5px;
+				background-image: url('https://ychef.files.bbci.co.uk/1600x900/p09jxppy.webp');
+				height: 170px;
+				width: 300px;
+				background-size: 300px, 170px;
+			}
+			div#news5 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#headline5{
+				position: absolute;
+				color: white;
+				filter: brightness(100%);
+				bottom: 10px;
+				left: 16px;
+				text-align: left;
+				font-size:130%;
+			}
+			
+			#newsContent{
+				height:1000px;
+				width:1286px;
+				float:left;
+				background-color: white;
+				
+			}
+			#tag::before{
+				content: " ";
+				display: inline-block;
+				margin-right: .5rem;
+				border-left: 5px solid red;
+				height: 1.125rem;
+				border-left-width: .225rem;
+			}
+			#tag{
+				color: black;
+				font-size: 150%;
+				text-decoration: none;
+			}
+			#news6{
+				position:relative;
+				float: left;
+				margin: 10px, 20px, 10px, 0px;
+				width: 425px;
+				height: 360px;
+				
+				text-align: left;
+				background-color: white;
+			}
+			#news6 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#news7{
+				position:relative;
+				float: left;
+				width: 425px;
+				height: 360px;
+				margin: 10px, 20px, 10px, 0px;
+				text-align: left;
+				background-color: white;
+				
+			}
+			#news7 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+			#news8{
+				position:relative;
+				float: right;
+				width: 425px;
+				height: 360px;
+				margin: 10px, 20px, 10px, 0px;
+				text-align: left;
+				background-color: white;
+			}
+			#news8 a{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none; 
+			}
+					
+			
+		</style>
+			
+	</head>
+	
+	<body>
+		<div class="topLine" id="bbcBlock">
+			<a href="https://www.bbc.com/" ><img id="bbcLogo" src="BBCLogo.png"></a>
+		</div>
+		
+		<div class="topLine" id="signInBlock">
+			<a href="https://session.bbc.com/session?ptrt=https%3A%2F%2Fwww.bbc.com%2Fnews&context=news&userOrigin=news_gnl">
+				<img id="signIn" src="SignIn-Logo.png">
+				<p id="signInText">Sign in</p>
+			</a>
+		</div>
+		<div class="topLine" id="homeBlock">
+			<a href="https://www.bbc.com/">
+				<p class="headerText">Home</p>
+			</a>
+		</div>
+		<div class="topLine" id="newsBlock">
+			<a href="https://www.bbc.com/news">
+				<p class="headerText">News</p>
+			</a>
+		</div>
+		<div class="topLine" id="sportsBlock">
+			<a href="https://www.bbc.com/sport">
+				<p class="headerText">Sport</p>
+			</a>
+		</div>
+		<div class="topLine" id="reelBlock">
+			<a href="https://www.bbc.com/reel">
+				<p class="headerText">Reel</p>
+			</a>
+		</div>
+		<div class="topLine" id="worklifeBlock">
+			<a href="https://www.bbc.com/worklife">
+				<p class="headerText">Worklife</p>
+			</a>
+		</div>
+		<div class="topLine" id="travelBlock">
+			<a href="https://www.bbc.com/travel">
+				<p class="headerText">Travel</p>
+			</a>
+		</div>
+		<div class="topLine" id="futureBlock">
+			<a href="https://www.bbc.com/future">
+				<p class="headerText">Future</p>
+			</a>
+		</div>
+		<div class="topLine" id="cultureBlock">
+			<a href="https://www.bbc.com/culture">
+				<p class="headerText">Culture</p>
+			</a>
+		</div>
+		<div class="topLine" id="moreBlock">
+			<form>
+				<select id="dropDown" name="more" onChange="window.location.href=this.value">
+					<option hidden disabled selected value><span id="moreText">More</span></option>
+					<option value="https://www.bbc.com/culture/music">Music</option>
+					<option value="https://www.bbc.co.uk/schedules/p00fzl9m">TV</option>
+					<option value="https://www.bbcselect.com/">BBC Select</option>
+					<option value="https://www.bbc.com/weather">Weather</option>
+					<option value="https://www.bbc.co.uk/sounds">Sounds</option>
+				</select>
+			</form>
+		</div>
+		<div class="topLine" id="searchBlock">
+		<form style="position:relative;top: 10px;left: 10px;">
+			<input type="text" placeholder="Search">
+		</form>
+		</div>
+		<div id="leftColumn">
+		</div>
+		<div id="rightColumn">
+		</div>
+		<div id="content">
+			<p style="color:gray;float:left;font-size:175%;margin: 0px;position:relative;top: 15px;left: 10px;color:black;"><b>Welcome to BBC.com</b></p>
+			<p style="color:grey;float:right;">Tuesday, 1 June</p>
+			<div id="mainNews" class="news">
+				<a href="https://www.bbc.com/news/world-us-canada-57311501">
+					<p id="headline">Canada-wide search urged as children's <br>remains found<br>
+					<span style="font-size:50%;text-align:left;">indigenous groups in Canada have demanded a nationwide search for further graves after the discovery of the remains of 215 children.</span>
+					</p>
+				</a>
+			</div>
+			<div id="news2" class="news">
+				<a href="https://www.bbc.com/news/world-us-canada-57322511">
+					<p id="headline2">Biden to suspend Trump Arctic<br>Drilling leases
+					</p>
+				</a>
+			</div>
+			<div id="news3" class="news">
+				<a href="https://www.bbc.com/sport/live/cricket/55587785">
+					<p id="headline3">England v New Zealand: First <br> Test, day one updates
+					</p>
+				</a>
+			</div>
+			<div id="news4" class="news">
+				<a href="https://www.bbc.com/worklife/article/20210528-positive-deviants-why-rebellious-workers-spark-gr-ideas">
+					<p id="headline4">Why 'rebels with a cause' win at work</p>
+					</p>
+				</a>
+			</div>
+			<div id="news5" class="news">
+				<a href="https://www.bbc.com/culture/article/20210528-the-discovery-of-mythical-lost-tapes">
+					<p id="headline5">The discovery of mythical 'lost tapes'</p>
+					</p>
+				</a>
+			</div>
+			
+			<div id="newsContent">
+				<a href="https://www.bbc.com/news" style="text-decoration:none;"><p id="tag">News</p></a>
+				<div id="news6" class="news">
+					<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1853F/production/_118774699_hi067388646.jpg" style="height:228px;width:405;float:left;margin-bottom: 5px;">
+					<a href="https://www.bbc.com/news/technology-57332399"></a>
+					<p id="headline6" style="font-size:20px;">Tesla failed to stop Musk tweets, regulator says <br> <br> <span style="font-size:16px;color:gray;">Tesla has allegedly repeatedly failed to pre-approve Elon Musk's tweets, despite the rules of a court order.</span></p>
+				</div>
+				
+				<div id="news7" class="news">
+					<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/116A9/production/_118773317_mediaitem118773315.jpg" style="height:228px;width:405;float:left;margin-bottom: 5px;">
+					<a href="https://www.bbc.com/news/world-middle-east-57327591"></a>
+					<p id="headline7" style="font-size:20px;">Israel opposition face deadline to form <br> givernment <br> <br> <span style="font-size:16px;color:gray;">Israeli opposition parties have just hours left to form a new government that would end Benjamin Netanyahu's 12-year stretch as prime minister.</span></p>
+					</p>
+				</div>
+				
+				<div id="news8" class="news">
+				<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/6551/production/_118773952_gettyimages-619202608.jpg" style="height:228px;width:405;float:left;margin-bottom: 5px;">
+				<a href="https://www.bbc.com/news/world-asia-57328868"></a>
+					<p id="headline8" style="font-size:20px;">Malaysia accuses China of breaching airspace <br> <br> <span style="font-size:16px;color:gray;">Malaysia says it is to summon China's ambassador after 16 Chinese military aircraft flew over disputed waters off its eastern state of Sarawak.</span></p>
+					</p>
+				
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+</html>
